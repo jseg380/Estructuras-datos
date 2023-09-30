@@ -1,0 +1,42 @@
+/*! \mainpage Práctica 2: Construcción de los TDA MaxStack y MaxQueue
+
+# Introducción
+
+Práctica 2 de la asignatura Estructura de Datos en la que se trabaja con los TDAs contenedores lineales implementando métodos haciendo uso de 
+las esctructuras de datos lineales de pilas (LIFO) y colas (FIFO) y siguiendo las directivas del principio de ocultación de la información.
+
+# Ejecutables
+
+@image html pila.png  
+
+## Pila Max (Empleando el TDA MaxStack)
+
+Dados unos argumentos de entrada, si el elemento es numérico lo inserta en la pila y, si es un punto, saca de la pila el último elemento introducido y lo muestra por pantalla
+
+> __pila_max__ \<n_arbitrario\>
+@param "<n_arbitrario>" número arbitrario de argumentos los cuales pueden ser elementos numéricos o un punto 
+
+Por ejemplo, si introducimos como argumentos: 1 2 . 3 4 . . .  
+La salida será:  
+2,2  
+4,4  
+3,3  
+1,1  
+
+@image html cola.png  
+
+## Cola Max (Empleando el TDA MaxQueue)
+
+Dados unos argumentos de entrada, si el elemento es numérico lo inserta en la cola y, si es un punto, saca de la cola el primer elemento introducido y lo muestra por pantalla
+
+> __cola_max__ \<n_arbitrario\>
+@param "<n_arbitrario>" número arbitrario de argumentos los cuales pueden ser elementos numéricos o un punto 
+
+Por ejemplo, si introducimos como argumentos: 1 2 . 3 4 . . .  
+La salida será:  
+1,2  
+2,4  
+3,4  
+4,4  
+
+*/

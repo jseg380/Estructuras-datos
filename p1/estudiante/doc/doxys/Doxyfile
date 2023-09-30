@@ -1,0 +1,6 @@
+PROJECT_NAME           = "Práctica 1. Imágenes"
+OUTPUT_DIRECTORY       = estudiante/doc/doc_doxygen/
+INPUT                  = estudiante/doc/ 
+GENERATE_LATEX         = NO
+IMAGE_PATH             = estudiante/doc/
+EXTRACT_PRIVATE        = NO

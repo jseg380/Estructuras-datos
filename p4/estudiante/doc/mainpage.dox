@@ -1,0 +1,85 @@
+/*! \mainpage Práctica Final: El juego de las letras
+
+# Introducción
+
+En esta práctica retomaremos el juego de las letras, manejando una estructura de datos alternativa
+para tratar de dar una solución más eficiente al mismo. 
+
+Modificaremos la implementación del TDA Dictionary de la práctica anterior
+utilizando como contenedor subyacente un árbol LCRS (Left-Child Right-Sibling). De esta forma,
+podremos almacenar nuestro diccionario con menos espacio y crear un solver más eficiente.
+Concretamente:
+  1. Necesitaremos almacenar menos información para representar el diccionario completo (lo
+  podremos comprobar contando el número de letras almacenadas en total).
+
+  2. Podremos recuperar más rápidamente las palabras que se pueden formar dado un vector de
+  letras, ya que la estructura de árbol en la que almacenaremos el diccionario nos permitirá
+  explorar las posibles soluciones de una forma bastante eficiente.
+
+# Ejecutables
+
+## Diccionario
+
+Se carga el contenido del archivo que se pasa como argumento en un diccionario con estructura de árbol. Se recorre 
+el diccionario creado con un iterador, y se imprimen por pantalla todas sus palabras.
+>__diccionario__ \<dict\>
+@param "<dict>" Ruta al archivo que contiene el diccionario
+
+
+## Cantidad Letras
+
+Recibirá como argumentos un fichero de diccionario y un fichero de letras, creará el LettersSet y el Dictionary 
+con la información de dichos ficheros, y para cada letra del diccionario calculará el número de veces que se usa 
+esa letra y el número de ocurrencias de la letra en la estructura de diccionario.
+>__cantidad_letras__ \<dict\> \<letras\>
+@param "<dict>" Ruta al archivo que contiene el diccionario
+@param "<letras>" Ruta al archivo que contiene las letras para crear el LettersSet
+
+
+## Partida Letras
+
+Recibirá cuatro argumentos.
+Dicho programa se encargará de construir el LettersSet para la partida a partir del archivo de letras,
+el Dictionary con las palabras que se consideran soluciones correctas, el Solver que va a jugar la
+partida y la LettersBag que se utilizará para extraer las letras. Una vez construidos los TDAs
+necesarios, extraerá las letras con las que se jugará la partida, utilizará el Solver para buscar las
+soluciones, e imprimirá por pantalla tanto las letras para la partida como las mejores soluciones que
+se pueden obtener con dichas letras y la puntuación de dichas soluciones.
+>__partida_letras__ \<dict\> \<letras\> \<modo\> \<num\>
+@param "<dict>" Ruta al archivo que contiene el diccionario
+@param "<letras>" Ruta al archivo que contiene las letras y su puntuación
+@param "<modo>" Modo de juego (L = longitud, P = puntuación)
+@param "<num>" Cantidad de letras para la partida
+
+
+## Palabras Validas Diccionario
+
+Se carga el contenido del archivo que se pasa como argumento en un diccionario con estructura de árbol. El resto 
+de argumentos que se pasan en la llamada al programa son las letras disponibles que se utilizan para formar
+palabras. Se recorre el diccionario creado con un iterador, y se imprimen por pantalla sus palabras
+válidas según las letras especificadas.
+>__palabras_validas_diccionario__ \<dict\> \<n_arbitrario\>
+@param "<dict>" Ruta al archivo que contiene el diccionario
+@param "<n_arbitrario>" Cantidad arbitraria de letras que se utilizarán para formar palabras
+
+
+## Partida Letras Eficiente
+
+Recibirá cuatro argumentos.
+Dicho programa se encargará de construir el LettersSet para la partida a partir del archivo de letras,
+el Dictionary con las palabras que se consideran soluciones correctas, el Solver que va a jugar la
+partida y la LettersBag que se utilizará para extraer las letras. Una vez construidos los TDAs
+necesarios, extraerá las letras con las que se jugará la partida, utilizará el Solver Eficiente para buscar las
+soluciones, e imprimirá por pantalla tanto las letras para la partida como las mejores soluciones que
+se pueden obtener con dichas letras y la puntuación de dichas soluciones.
+>__partida_letras_eficiente__ \<dict\> \<letras\> \<modo\> \<num\>
+@param "<dict>" Ruta al archivo que contiene el diccionario
+@param "<letras>" Ruta al archivo que contiene las letras y su puntuación
+@param "<modo>" Modo de juego (L = longitud, P = puntuación)
+@param "<num>" Cantidad de letras para la partida
+
+
+
+# Análisis de eficiencia
+
+*/

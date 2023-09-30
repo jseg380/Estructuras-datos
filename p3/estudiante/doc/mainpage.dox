@@ -1,0 +1,58 @@
+/*! \mainpage Práctica 3: Construcción de los TDA LettersSet, Bag, LettersBag y Dictionary
+
+# Introducción
+
+Esta práctica 3 está centrada en el juego conocido como cifras y letras, juego popularizado a través de concursos de televisión en distintos países.
+En esta práctica nos centraremos en la prueba de las letras.
+Por otra parte, en la práctica trabajamos con tres TDA abstractos y una template class. Dichos TDAs nos permitirán organizar la información necesaria para jugar
+una partida del juego de las letras.
+
+# Ejecutables
+
+## Conjunto Letras (Empleando el TDA LettersSet)
+
+Dados unos argumentos de entrada, el primero incluye la ruta al archivo con información sobre el conjunto de letras y el segundo es la palabra cuya
+puntuación queremos calcular. Imprimirá por pantalla la puntuación de dicha palabra.
+> __conjunto_letras__ \<ruta\> \<palabra\>
+@param "<ruta>" Ruta del archivo con la información sobre el conjunto de letras.
+@param "<palabra>" Palabra cuya puntuación queremos calcular.
+
+
+## Bolsa (Empleando el TDA Bag)
+
+Dado un primer argumento que indica si trabajaremos con una bolsa de caracteres o de enteros, y luego un número arbitrario de argumentos que serán una
+lista de caracteres o enteros (según corresponda), se meterán todos los elementos en la bolsa y después serán extraídos aleatoriamente hasta que la 
+bolsa quede vacía.
+> __bolsa__ \<tipo\> \<n_arbitrario_arg\>
+@param "<tipo>" Letra que indica el tipo de argumento. Si es la letra C, se trabajará con una bolsa de caracteres, y si es la letra I, con una bolsa de enteros.
+@param "<n_arbitrario_arg>" Número arbitrario de argumentos que serán una lista de caracteres o de enteros, según corresponda.
+
+
+## Bolsa Letras (Empleando el TDA LettersBag)
+
+Crea un conjunto de letras (LettersSet) y lo rellena a partir de la información leída de un archivo. Luego crea una bolsa de letras (LettersBag) y la
+rellena con la información del LettersSet anterior. Finalmente extrae todas las letras de la LettersBag aleatoriamente y las imprime por pantalla.
+> __bolsa_letras__ \<archivo\>
+@param "<archivo>" Archivo del cual se lee la información pasra rellenar el LettersSet.
+
+
+## Palabras Longitud (Empleando el TDA Dictionary)
+
+Este programa recibe dos argumentos: el primero, un fichero con las palabras de un diccionario; el segundo, un entero con la longitud de las palabras que buscamos.
+Construye un Dictionary con el fichero de las palabras, extrae de dicho diccionario las palabras de la longitud que buscamos y las imprime por pantalla.
+> __palabras_longitud__ \<archivo\> \<longitud\>
+@param "<archivo>" Archivo que contiene las palabras de un diccionario con el cual se construye un Dictionary
+@param "<longitud>" Longitud de las palabras que buscamos en el Dictionary
+
+
+## Cantidad Letras (Empleando el TDA Dictionary)
+
+Este programa recibe dos argumentos: el primero, un fichero con las palabras de un diccionario; el segundo, un fichero de letras.
+Construye un Dictionary con el fichero de las palabras, un LettersSet con el fichero de letras, e imprime por pantalla, para cada letra en el LettersSet,
+el número de ocurrencias en el diccionario y su frecuencia relativa (es decir, el número total de ocurrencias de la letra entre el número total de
+letras en el diccionario).
+> __cantidad_letras__ \<archivo\> \<fichero\>
+@param "<archivo>" Archivo que contiene las palabras de un diccionario con el cual se construye un Dictionary
+@param "<fichero>" Fichero de letras con el cual se construye un LettersSet
+
+*/

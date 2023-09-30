@@ -1,0 +1,77 @@
+/*! \mainpage Título de la página principal
+
+@image html doxyque.png "Pie de foto"
+
+# Introducción
+
+Práctica 1 de la asignatura Estructura de Datos en la que se trabaja en el TDA Imagen implementando métodos haciendo uso de diferentes estrategias de abstracción y siguiendo las directivas del principio de ocultación de la información.
+
+# Ejecutables
+
+@image html invert.png
+## Negativo:
+
+Calcula el negativo de una imagen.
+
+> __negativo__ \<FichImagenOriginal\> \<FichImagenDestino\>
+@param "<FichImagenOriginal>" Imagen PGM a la que se va a calcular
+@param <FichImagenDestino> Imagen PGM resultado de calcular el negativo
+
+@image html subimagen.png
+## Subimagen:
+
+Genera una subimagen
+
+> __subimagen__ \<FichImagenOriginal\> \<FichImagenDestino\> \<FilaInicial\> \<ColumnaInicial\> \<NumFilas\> \<NumColumnas\>
+@param "<FichImagenOriginal>" Imagen PGM de la que se extrae la subimagen
+@param <FichImagenDestino> Imagen PGM resultado de la subimagen extraída
+@param <FilaInicial> Fila inicial de la imagen original de la cual se extraerá la subimagen
+@param <ColumnaInicial> Columna inicial de la imagen original de la cual se extraerá la subimagen
+@param <NumFilas> Número de filas de la subimagen
+@param <NumColumnas> Número de columnas de la subimagen
+
+@image html zoom.png
+## Zoom:
+
+Genera una imagen ampliada 2x a partir de una sección cuadrada de la imagen original dadas sus coordenadas y el lado.
+
+> __zoom__ \<FichImagenOriginal\> \<FichImagenDestino\> \<FilaInicial\> \<ColumnaInicial\> \<Lado\>
+@param "<FichImagenOriginal>" Imagen PGM en la que se hace el zoom
+@param <FichImagenDestino> Imagen PGM resultado de la imagen aumentada
+@param <FilaInicial> Fila inicial de la imagen original de la cual se hará el zoom
+@param <ColumnaInicial> Columna inicial de la imagen original de la cual se hará el zoom
+@param <Lado> Dimensión de cada lado de la imagen resultante
+
+@image html icono.png
+## Icono:
+
+Genera un icono como reducción de una imagen.
+
+> __icono__ \<FichImagenOriginal\> \<FichImagenDestino\> \<Factor\>
+@param "<FichImagenOriginal>" Imagen PGM de la que se hará el icono
+@param <FichImagenDestino> Imagen PGM resultado donde se almacenará el icono 
+@param <Factor> Factor de reducción de la imagen original con respecto al icono
+
+@image html contraste.png
+## Contraste:
+
+Modifica el contraste de una imagen.
+
+> __contraste__ \<FichImagenOriginal\> \<FichImagenDestino\> \<e1\> \<e2\> \<s1\> \<s2\>
+@param "<FichImagenOriginal>" Imagen PGM a la cual se aplica la modificación de contraste
+@param <FichImagenDestino> Imagen PGM resultado de modificar el contraste
+@param <e1> Umbral inferior de la imagen de entrada
+@param <e2> Umbral superior de la imagen de entrada
+@param <s1> Umbral inferior de la imagen de salida
+@param <s2> Umbral superior de la imagen de salida
+
+@image html barajar.png
+## Barajar:
+
+Baraja pseudoaleatoriamente las filas de una imagen.
+
+> __barajar__ \<FichImagenOriginal\> \<FichImagenDestino\>
+@param "<FichImagenOriginal>" Imagen PGM a la que se van a barajar las filas
+@param <FichImagenDestino> Imagen PGM resultado de barajar las filas
+
+*/
